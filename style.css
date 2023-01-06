@@ -1,12 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+
 }
 
+
 header {
+    width: 100%;
     margin: auto;
     justify-content: center;
+    display: block;
+    position: fixed;
 }
+
 
 #cabecalho {
     background-color: burlywood;
@@ -14,19 +21,24 @@ header {
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 40px;
+    height: 60px;
 }
 
 .bemvindo {
-    margin-left: 80px;
-    margin-right: 30px;
+    margin-left: 0px;
+    margin-right: 40px;
+    font-size: 1.3rem;
+}
+
+nav {
+    display: flex;
 }
 
 nav ul {
     display: flex;
 }
 
-nav li {
+nav .navegacao li {
     display: flex;
     align-items: center;
     margin-left: 30px;
@@ -35,13 +47,33 @@ nav li {
 
 nav a {
     text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
+nav .navegacao a:hover {
+    color: white;
+}
+
+
 .btcontato {
-    margin-left: 500px;
+    
+    margin-left: 20px;
     border: 2px;
     border-style: solid;
-    border-radius: 8px;
-    padding: 3px;
+    border-radius: 15px;
+    padding: 8px;
     cursor: pointer;
+    font-weight: 600;
+    list-style-type: none;
+}
+
+.btcontato:hover {
+    background-color: rgb(216, 172, 172);
+    color: chocolate;
+    font-weight: 600;
+}
+
+main {
+    padding-top: 61px;
 }
